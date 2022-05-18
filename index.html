@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="favicon_io/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Dice Decider</title>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Welcome To The Roll Game</h1>
+      <p class="question">Want To Play??</p>
+      <div>
+        <button onclick="startGame()">Yes</button>
+        <button onclick="endGame()">No</button>
+      </div>
+      <h1 id="winner">Please Roll The Dice The One With Big Outcome Wins</h1>
+    </div>
+    <div id="dice">
+      <div>
+        <p class="playerName">Player 1</p>
+        <hr class="hr" />
+        <div id="dice1" class="dicee"></div>
+      </div>
+      <div>
+        <p class="playerName">Player 2</p>
+        <hr class="hr" />
+        <div class="dicee" id="dice2"></div>
+      </div>
+    </div>
+    <div class="heading">
+      <button class="rollingButt" onclick="roll(p1,p2)">Roll</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

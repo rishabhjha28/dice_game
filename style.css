@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+.heading{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 2%;
+    justify-content: center;
+}
+.question{
+    font-size: 2rem;
+    font-weight: bold;
+}
+button{
+    margin:1rem;
+    background-color: aqua;
+    height: 2rem;
+    width: 4rem;
+    border: 2px solid green;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+button:hover{
+    background-color: black;
+    color: yellow;
+    font-weight: bold;
+}
+#dice{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.playerName{
+    font-size: 2rem;
+    padding-left: 2.2rem;
+    text-align: center;
+}
+.dicee{
+    display: flex;
+    flex-direction: column;
+    border: 0.6rem solid red ;
+    border-radius: 30px;
+    height:22rem;
+    width:22rem;
+    margin: 2rem;
+    /* padding-bottom: 2rem; */
+    justify-content: center;
+}
+.diceElement {
+    font-size:6rem;
+    color: rgb(164, 31, 31);
+    text-align: center;
+}
+.rollingButt{
+    visibility: hidden;
+}
+.visible{
+    visibility: visible;
+}
+.hr{
+    border-style: dotted;
+    border-top : 0;
+    color: green;
+}
+@media only screen and (max-width: 819px) {
+    body {
+      background-color: black;
+    }
+  }
