@@ -21,9 +21,10 @@ function mkDice(a) {
 function endGame() {
     alert("Jab Khelna hi Nahi tha to aaya hi q APDSABD");
 }
+var p1, p2;
 function startGame() {
-    var p1 = prompt("Enter the name of player 1");
-    var p2 = prompt("Enter the name of player 2");
+    p1 = prompt("Enter the name of player 1");
+    p2 = prompt("Enter the name of player 2");
     if (p1.length === 0)
         p1 = "Player 1";
     if (p2.length == 0)
