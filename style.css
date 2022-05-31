@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     background-color: antiquewhite;
+    text-align: center;
 }
 .heading{
     display: flex;
@@ -9,6 +10,7 @@
     align-items: center;
     margin-bottom: 2%;
     justify-content: center;
+
 }
 .question{
     font-size: 2rem;
@@ -42,16 +44,20 @@ button:hover{
 .dicee{
     display: flex;
     flex-direction: column;
-    border: 0.6rem solid red ;
+    border: 0.6rem solid red;
     border-radius: 30px;
     height:22rem;
     width:22rem;
     margin: 2rem;
     /* padding-bottom: 2rem; */
     justify-content: center;
+    outline: none;
+}
+#dice2{
+    margin-left: 4vw;
 }
 .diceElement {
-    font-size:6rem;
+    font-size:5.8rem;
     color: rgb(164, 31, 31);
     text-align: center;
 }
@@ -66,8 +72,36 @@ button:hover{
     border-top : 0;
     color: green;
 }
-@media only screen and (max-width: 819px) {
-    body {
-      background-color: black;
+@media only screen and (max-width: 845px) {
+    .dicee{
+        height:10rem;
+        width:10rem;
     }
-  }
+    .diceElement{
+        font-size:2.4rem;
+    }
+}
+@media only screen and (max-width: 470px){
+    .dicee{
+        height:7rem;
+        width:7rem;
+        border: 0.4rem solid red;
+    }
+    .diceElement{
+        font-size:1.5rem;
+    }
+}
+@media only screen and (max-width: 360px){
+    .dicee{
+        height:6rem;
+        width:6rem;
+        border: 0.3rem solid red;
+        border-radius: 15px;
+    }
+    .diceElement{
+        font-size:1.1rem;
+    }
+    .playerName{
+        padding-left: 0rem;
+    }
+}
